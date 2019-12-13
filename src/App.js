@@ -1,15 +1,18 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 
 import NavBar from "./Components/NavBar.js";
 import Articles from "./Components/Articles";
+import UpcomingGames from "./Components/UpcomingGames";
 
 function App() {
   return (
     <div className="App">
       <NavBar />
-      <Articles />
+      <div className="main">
+        <UpcomingGames />
+        <Articles />
+      </div>
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>You are beautiful.</p>

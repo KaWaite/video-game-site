@@ -78,7 +78,7 @@ export default function NavBar() {
   return (
     <>
       <AppBar position="static" className={classes.appbar}>
-        <Toolbar className={classes.toolbar}>
+        <Toolbar className={classes.toolbar} variant="dense">
           <IconButton
             edge="start"
             className={classes.menuButton}
