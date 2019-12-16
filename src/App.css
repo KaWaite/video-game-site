@@ -1,9 +1,13 @@
-.App {
+.newsletter {
   /* text-align: center; */
+  /* width: 500px; */
+  background-color: red;
 }
 
 .main {
-  padding: 20px 80px;
+  padding: 20px;
+  width: 75%;
+  margin: auto;
 }
 
 .App-logo {

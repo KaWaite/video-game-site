@@ -4,6 +4,10 @@ import "./App.css";
 import NavBar from "./Components/NavBar.js";
 import Articles from "./Components/Articles";
 import UpcomingGames from "./Components/UpcomingGames";
+import Middle from "./Components/Middle";
+
+// import Newsletter from "./Components/Newsletter";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -12,7 +16,10 @@ function App() {
       <div className="main">
         <UpcomingGames />
         <Articles />
+        <Middle />
+        {/* <Newsletter className="newsletter" /> */}
       </div>
+      <Footer />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>You are beautiful.</p>
