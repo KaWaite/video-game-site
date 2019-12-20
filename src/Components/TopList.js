@@ -9,12 +9,14 @@ import ImageIcon from "@material-ui/icons/Image";
 import WorkIcon from "@material-ui/icons/Work";
 import BeachAccessIcon from "@material-ui/icons/BeachAccess";
 import Divider from "@material-ui/core/Divider";
+import ListSubheader from "@material-ui/core/ListSubheader";
 
 const useStyles = makeStyles(theme => ({
   root: {
     width: "100%",
     // maxWidth: 360,
-    backgroundColor: theme.palette.background.paper
+    // backgroundColor: theme.palette.background.paper,
+    padding: "0 20px"
   }
 }));
 
@@ -22,8 +24,15 @@ export default function TopRated() {
   const classes = useStyles();
 
   return (
-    <List className={classes.root}>
-      <ListItem>
+    <List
+      className={classes.root}
+      subheader={
+        <ListSubheader component="div" id="nested-list-subheader">
+          Ps4
+        </ListSubheader>
+      }
+    >
+      <ListItem button>
         <ListItemAvatar>
           <Avatar>
             <ImageIcon />
@@ -32,7 +41,7 @@ export default function TopRated() {
         <ListItemText primary="Bloodborne" secondary="Score: 9.0" />
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem>
+      <ListItem button>
         <ListItemAvatar>
           <Avatar>
             <WorkIcon />
@@ -41,7 +50,7 @@ export default function TopRated() {
         <ListItemText primary="Bloodborne" secondary="Score: 9.0" />
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem>
+      <ListItem button>
         <ListItemAvatar>
           <Avatar>
             <BeachAccessIcon />
@@ -50,7 +59,7 @@ export default function TopRated() {
         <ListItemText primary="Bloodborne" secondary="Score: 9.0" />
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem>
+      <ListItem button>
         <ListItemAvatar>
           <Avatar>
             <WorkIcon />
@@ -59,7 +68,7 @@ export default function TopRated() {
         <ListItemText primary="Bloodborne" secondary="Score: 9.0" />
       </ListItem>
       <Divider variant="inset" component="li" />
-      <ListItem>
+      <ListItem button>
         <ListItemAvatar>
           <Avatar>
             <BeachAccessIcon />

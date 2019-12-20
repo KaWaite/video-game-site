@@ -11,10 +11,12 @@ const useStyles = makeStyles(theme => ({
       margin: theme.spacing(1),
       width: "40%"
     },
-    width: "90%",
+    width: "70%",
     margin: "auto",
     padding: "30px 5px",
-    textAlign: "center"
+    textAlign: "center",
+    backgroundColor: "rgba(199,201,123,1)"
+    // color: "white"
   }
 }));
 
@@ -44,7 +46,7 @@ export default function Newsletter() {
             variant="outlined"
           />
         </div>
-        <Button color="primary" variant="contained">
+        <Button color="inherit" variant="contained">
           Sign-up
         </Button>
       </form>

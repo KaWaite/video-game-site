@@ -39,6 +39,12 @@ const useStyles = makeStyles(theme => ({
   },
   img: {
     width: "100%"
+  },
+  title: {
+    padding: "20px 10px 10px 20px"
+  },
+  sub: {
+    padding: "0 50px"
   }
 }));
 
@@ -74,8 +80,11 @@ export default function Articles() {
       <Grid container spacing={3}>
         <Grid item xs={12} md={9}>
           <Paper className={`${classes.paper} ${classes.mainarticle}`}>
-            <Typography variant="h2" component="h2">
+            <Typography variant="h2" component="h2" className={classes.title}>
               The Last Of Us pt. ii
+            </Typography>
+            <Typography variant="h5" className={classes.sub}>
+              When will it release??
             </Typography>
           </Paper>
         </Grid>

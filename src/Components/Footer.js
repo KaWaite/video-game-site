@@ -27,7 +27,8 @@ const useStyles = makeStyles(theme => ({
   },
   appbar: {
     backgroundColor: "rgba(199,201,123,1)",
-    color: "rgba(255,255,255,1)"
+    color: "rgba(255,255,255,1)",
+    marginTop: "40px"
   }
 }));
 

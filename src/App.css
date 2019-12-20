@@ -1,9 +1,6 @@
-.newsletter {
-  /* text-align: center; */
-  /* width: 500px; */
-  background-color: red;
+.App {
+  background-color: rgba(217, 218, 183, 1);
 }
-
 .main {
   padding: 20px;
   width: 75%;
